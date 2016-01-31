@@ -4,17 +4,31 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
-    "angular": "^1.4.9"
+    "angular": "^1.4.9",
+    "animate.css": "^3.4.0",
+    "jquery": "^2.2.0",
+    "moment": "^2.11.1"
   },
   "devDependencies": {
-    "style-loader": "^0.13.0",
+
+    "karma": "^0.13.19",
+
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "json-loader": "^0.5.4",
     "ng-annotate": "^1.2.1",
+    "ng-annotate-loader": "^0.1.0",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.12"
+
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.1.0",
+
+    "gulp": "^3.9.0",
+    "require-dir": "^0.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

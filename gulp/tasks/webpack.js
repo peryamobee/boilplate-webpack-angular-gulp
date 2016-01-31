@@ -2,24 +2,6 @@
  * Created by pery on 29/01/2016.
  */
 var gulp = require('gulp');
-var  webpackConfig = {
-    /*entry: {
-     //app: 'src/app.js',
-     //test: 'test/test.js',
-     },*/
-    output: {
-        //filename: '[name].js',
-        filename: 'Timer-App.js',
-    },
-    devtool: 'source-map',
-    module: {
-        loaders: [{
-            test: /\.scss$/,
-            loaders: ["style", "css", "sass"]
-        }]
-    },
-
-};
 var ports = {
     server:3000
 };
@@ -27,7 +9,7 @@ var ports = {
 gulp.task('webpack', function() {
     var webpack = require('webpack-stream');
     return gulp.src('src/index.js')
-        .pipe(webpack(webpackConfig))
+        .pipe(webpack(require('../../webpack.config.js')))
         .pipe(gulp.dest('build/'));
 });
 

@@ -17,10 +17,10 @@ module.exports = {
     watch: true,
     devtool: 'source-map',
     resolve: {
-        root: __dirname + '/app'
+        root: __dirname + '/src'
     },
     entry:{
-        TimerApp:'./app/core/bootstrap.js'
+        TimerApp:'./src/core/bootstrap.js'
     },
     output:{
         path: path.join(__dirname,'build'),
