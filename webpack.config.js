@@ -35,7 +35,7 @@ module.exports = {
                 loader: extractSCSS.extract('style-loader?sourceMap','css-loader!sass-loader')},
 
             {test: /\.js$/,
-                loader: 'ng-annotate!babel?presets[]=es2015!jshint',
+                loader: 'ng-annotate',
                 exclude: /node_modules|bower_components/},
 
             {test: /\.(woff|woff2|ttf|eot|svg)(\?]?.*)?$/,
