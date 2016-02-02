@@ -4,8 +4,11 @@ module.exports = function () {
 
     /* JS */
     global.$ = global.jQuery = require('jquery');
-    // $ for Lumx, jQuery for velocity
 
     require('angular');
     global.moment = require('moment');
+
+    /* angular vendors */
+    require('ui-router');
+    require('angular-ui-router.statehelper')
 };
